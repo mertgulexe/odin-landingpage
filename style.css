@@ -81,15 +81,11 @@ header a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-
-}
-
-.hero-container>* {
-  flex-basis: 40%;
+  gap: 5rem;
 }
 
 .hero-text {
+  flex: 0 1 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +105,10 @@ header a {
 }
 
 .hero-container img {
+  flex: 0 1 30vw;
   height: 200px;
+  width: auto;
+  object-fit: cover;
 }
 
 /* ----- INSIDE THE CAROUSEL SECTION ----- */
@@ -140,12 +139,15 @@ header a {
   display: flex;
   flex: 0 0 200px;
   flex-direction: column;
-  align-items: space-between;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   gap: 0.5rem;
 }
 
 .card img {
+  height: 200px;
+  width: 200px;
   border: var(--bluish) 2px solid;
   border-radius: 12px;
   box-shadow: var(--box-shadow-configs);
@@ -179,7 +181,7 @@ header a {
 /* ----- INSIDE THE QUOTE SECTION ----- */
 .cta-container {
   border-radius: 8px;
-  margin: 5rem 10%;
+  margin: 5rem 20%;
   padding: 2rem 6rem;
   background-color: var(--bluish);
   display: flex;
@@ -204,6 +206,7 @@ header a {
 .cta-button {
   border: var(--whitish) 2px solid;
   display: flex;
+  flex-shrink: 0;
 }
 
 /* ----- INSIDE THE FOOTER SECTION ----- */
