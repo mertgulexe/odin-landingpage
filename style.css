@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* ----- COSMETIC VARIABLES ----- */
 :root {
   --dark-blue: #1F2937;
   --grayish: #E5E7EB;
   --whitish: #F9FAF8;
   --bluish: #3882F6;
+  --box-shadow-configs: 3px 3px 5px 0px rgba(29, 29, 29, 0.5);
 }
 
 /* ----- GENERAL CONFIGS ----- */
@@ -51,7 +53,7 @@ button {
   padding: 0.30rem 1.75rem;
   font-size: 18px;
   font-weight: 600;
-  box-shadow: 2px 2px 3px 0px rgba(29, 29, 29, 0.4);
+  box-shadow: var(--box-shadow-configs);
 }
 
 img {
@@ -146,7 +148,7 @@ header a {
 .card img {
   border: var(--bluish) 2px solid;
   border-radius: 12px;
-  box-shadow: 2px 2px 3px 0px rgba(29, 29, 29, 0.4);
+  box-shadow: var(--box-shadow-configs);
 }
 
 .card p {
@@ -185,7 +187,7 @@ header a {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  box-shadow: 2px 2px 3px 0px rgba(29, 29, 29, 0.4);
+  box-shadow: var(--box-shadow-configs);
 }
 
 .cta-title {
