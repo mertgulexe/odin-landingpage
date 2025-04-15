@@ -43,6 +43,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: var(--grayish);
 }
 
 button {
@@ -66,11 +67,6 @@ header h1 {
   font-size: 24px;
   color: var(--whitish);
   margin-right: 2rem;
-}
-
-header a {
-  font-size: 18px;
-  color: var(--grayish);
 }
 
 /* ----- INSIDE THE HERO SECTION ----- */
@@ -190,6 +186,10 @@ header a {
   align-items: center;
   gap: 1rem;
   box-shadow: var(--box-shadow-configs);
+}
+
+.cta-text {
+  flex: 0 1 30vw;
 }
 
 .cta-title {
