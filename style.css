@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --dark-blue: #1F2937;
+  --grayish: #E5E7EB;
+  --whitish: #F9FAF8;
+  --bluish: #3882F6;
+}
+
+/* ----- GENERAL CONFIGS ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto, 'Open Sans', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+header {
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background-color: var(--bluish);
+  color: var(--whitish);
+  padding: 0.30rem 1.75rem;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 2px 2px 3px 0px rgba(29, 29, 29, 0.4);
+}
+
+img {
+  background-color: var(--grayish);
+  color: var(--dark-blue);
+}
+
+/* ----- INSIDE THE HEADER ----- */
+header h1 {
+  font-size: 24px;
+  color: var(--whitish);
+  margin-right: 2rem;
+}
+
+header a {
+  font-size: 18px;
+  color: var(--grayish);
+}
+
+/* ----- INSIDE THE HERO SECTION ----- */
+.hero-container {
+  padding: 5rem 10%;
+  background: var(--dark-blue);
+  color: var(--whitish);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.hero-container>* {
+  flex-basis: 40%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: inherit;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: var(--grayish);
+  margin: 0.75rem 0;
+}
+
+.hero-container img {
+  height: 200px;
+}
+
+/* ----- INSIDE THE CAROUSEL SECTION ----- */
+.carousel-container {
+  padding: 2rem 10% 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carousel-container h2 {
+  font-size: 36px;
+  color: var(--dark-blue);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  flex: 0 0 200px;
+  flex-direction: column;
+  align-items: space-between;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.card img {
+  border: var(--bluish) 2px solid;
+  border-radius: 12px;
+  box-shadow: 2px 2px 3px 0px rgba(29, 29, 29, 0.4);
+}
+
+.card p {
+  color: rgba(128, 128, 128, 0.90);
+}
+
+/* ----- INSIDE THE QUOTE SECTION ----- */
+.quote-container {
+  background-color: var(--grayish);
+  padding: 5rem 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-text {
+  color: var(--dark-blue);
+  font-size: 36px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.quote-author {
+  color: var(--dark-blue);
+  font-weight: 900;
+  text-align: end;
+}
+
+/* ----- INSIDE THE QUOTE SECTION ----- */
+.cta-container {
+  border-radius: 8px;
+  margin: 5rem 10%;
+  padding: 2rem 6rem;
+  background-color: var(--bluish);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 2px 2px 3px 0px rgba(29, 29, 29, 0.4);
+}
+
+.cta-title {
+  color: var(--whitish);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.cta-body {
+  color: var(--grayish);
+  font-weight: 300;
+}
+
+.cta-button {
+  border: var(--whitish) 2px solid;
+  display: flex;
+}
+
+/* ----- INSIDE THE FOOTER SECTION ----- */
+footer {
+  color: var(--whitish);
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10%;
+}
