@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Odin Project: Landing Page">
-    <meta name="author" content="Mert Gul">
-    <meta name="keywords" content="theodinproject, odin project, odin, project, landing page, html, css">
-    <title>Odin Project: Landing Page</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    
-    <header>
-      <h1>Da Oden Projekt</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Support</a></li>
-        </ul>
-      </nav>
-    </header>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Odin Project: Landing Page">
+  <meta name="author" content="Mert Gul">
+  <meta name="keywords" content="theodinproject, odin project, odin, project, landing page, html, css">
+  <title>Odin Project: Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Da Oden Projekt</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
     <div class="hero-container">
       <div class="hero-text">
-        <h1>Welcome to the desert of the real.</h1>
+        <h2>Welcome to the desert of the real.</h2>
         <p>
           For the source code of this website, click the button below.
-          It will take you to my <strong>Github</strong> repository.
+          It will take you to my Github repository.
         </p>
-        <button class="hero-button">
-          <a href="https://github.com/mertgulexe/odin-landingpage" rel="noopener noreferrer" target="_blank">
-            Click Here!
-          </a>
-        </button>
+        <a class="button hero-button" href="https://github.com/mertgulexe/odin-landingpage"
+          aria-label="Visit the GitHub repository for this project" role="button" rel="noopener noreferrer"
+          target="_blank">
+          Click Here!
+        </a>
       </div>
       <img src="./assets/img-04.jpg" alt="Hero Image Placeholder" height="200">
     </div>
 
     <div class="carousel-container">
-      <h2>Some random information.</h2>
+      <h3>Some random information.</h3>
       <div class="images">
         <div class="card">
           <img src="./assets/img-01.jpg" alt="Image Placeholder 1" height="200" width="200">
@@ -61,16 +63,18 @@
     </div>
 
     <div class="quote-container">
-      <p class="quote-text">
-        <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Proin vitae felis vel odio laoreet bibendum.
-        Pellentesque quis enim nibh. Vivamus consectetur in felis in dignissim.
-        Nulla id dui aliquet, imperdiet odio et, suscipit diam.
-        Mauris pharetra nunc ac erat placerat, vel rutrum diam consequat.
-        Curabitur maximus eros in risus placerat, eget elementum diam dignissim.
-        Quisque finibus venenatis enim sit amet mollis."</em>
-      </p>
-      <p class="quote-author"><strong>- Mert Gul</strong></p>
+      <div class="quote-text">
+        <p class="quote-body">
+          <em>"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Proin vitae felis vel odio laoreet bibendum.
+            Pellentesque quis enim nibh. Vivamus consectetur in felis in dignissim.
+            Nulla id dui aliquet, imperdiet odio et, suscipit diam.
+            Mauris pharetra nunc ac erat placerat, vel rutrum diam consequat.
+            Curabitur maximus eros in risus placerat, eget elementum diam dignissim.
+            Quisque finibus venenatis enim sit amet mollis."</em>
+        </p>
+        <p class="quote-author"><strong>- Mert Gul</strong></p>
+      </div>
     </div>
 
     <div class="cta-container">
@@ -80,17 +84,36 @@
         </p>
         <p class="cta-body">
           For the source code of this website, click the button below.
-          It will take you to my <em>Github</em> repository.
+          It will take you to my Github repository.
         </p>
       </div>
-      <button class="cta-button">
-        <a href="https://github.com/mertgulexe/odin-landingpage" rel="noopener noreferrer" target="_blank">
-          Click Here!
-        </a>
-      </button>
+      <a class="button cta-button" href="https://github.com/mertgulexe/odin-landingpage"
+        aria-label="Visit the GitHub repository for this project" role="button" rel="noopener noreferrer"
+        target="_blank">
+        Click Here!
+      </a>
     </div>
+  </main>
 
-    <footer>Copyright © The Odin Project 2025</footer>
+  <footer>Copyright © The Odin Project 2025</footer>
 
-  </body>
+</body>
+
 </html>
+
+
+<!-- 
+Note to future:
+1) Written by ChatGPT:
+  "Add lang and type to external font imports (in your CSS):
+  Currently you're importing Google Fonts via @import in your CSS, but it’s more performant to load them in the <head> like this:
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" type="text/css" media="all">
+
+  @import can cause render-blocking in some older browsers — loading fonts early from <head> is slightly faster."
+
+2) Add a favicon to the project.
+
+3) Make the website similar to The Odin Project's landing page when zoomedin or out in extreme levels.
+TOP website fits the screen quite nicely.
+-->
