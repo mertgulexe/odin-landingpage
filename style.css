@@ -13,7 +13,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: Roboto, 'Open Sans', monospace;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 
 html {
@@ -46,7 +46,7 @@ a {
   color: var(--grayish);
 }
 
-button {
+.button {
   border: none;
   border-radius: 6px;
   background-color: var(--bluish);
@@ -88,7 +88,7 @@ header h1 {
   align-items: flex-start;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   font-size: 48px;
   font-weight: 900;
   color: inherit;
@@ -116,7 +116,7 @@ header h1 {
   align-items: center;
 }
 
-.carousel-container h2 {
+.carousel-container h3 {
   font-size: 36px;
   color: var(--dark-blue);
   font-weight: 900;
@@ -159,9 +159,17 @@ header h1 {
   padding: 5rem 25%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .quote-text {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1000px;
+
+}
+
+.quote-body {
   color: var(--dark-blue);
   font-size: 36px;
   font-weight: 300;
@@ -172,9 +180,10 @@ header h1 {
   color: var(--dark-blue);
   font-weight: 900;
   text-align: end;
+  align-self: flex-end;
 }
 
-/* ----- INSIDE THE QUOTE SECTION ----- */
+/* ----- INSIDE THE CALL-TO-ACTION SECTION ----- */
 .cta-container {
   border-radius: 8px;
   margin: 5rem 20%;
